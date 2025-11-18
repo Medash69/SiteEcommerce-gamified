@@ -9,7 +9,17 @@ Instructions rapides:
 - Frontend: `cd frontend` -> `npm install` -> `npm run dev`
 
 Fichier de configuration example .env (backend/.env):
+# 1. Backend
+cd backend
+npm install
+# Créer .env avec MongoDB URI
+npm run dev
 
-MONGO_URI=mongodb://localhost:27017/ecommerce_gamified
-JWT_SECRET=your_jwt_secret
-PORT=5000
+# 2. Frontend
+cd frontend  
+npm install
+npm run dev
+
+# 3. Initialiser DB
+cd backend
+node scripts/seed.js
